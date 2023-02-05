@@ -47,3 +47,8 @@ new NathanService(app, {
     namespace: "index"
 });
 app.synth();
+
+const kubectl = Buffer.from(process.argv[3], "base64").toString("utf8");
+console.log("\n\n\nKubectl:\n");
+console.log(kubectl);
+console.log("\n\n\n");
